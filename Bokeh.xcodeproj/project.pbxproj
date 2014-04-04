@@ -21,6 +21,11 @@
 		7B344A8F18EF4433001A6BA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B344A7118EF4433001A6BA3 /* UIKit.framework */; };
 		7B344A9718EF4433001A6BA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B344A9518EF4433001A6BA3 /* InfoPlist.strings */; };
 		7B344A9918EF4433001A6BA3 /* BokehTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B344A9818EF4433001A6BA3 /* BokehTests.m */; };
+		7B344AA718EF4456001A6BA3 /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B344AA318EF4456001A6BA3 /* bokeh.png */; };
+		7B344AA818EF4456001A6BA3 /* particleBokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7B344AA418EF4456001A6BA3 /* particleBokeh.sks */; };
+		7B344AA918EF4456001A6BA3 /* particleRain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7B344AA518EF4456001A6BA3 /* particleRain.sks */; };
+		7B344AAA18EF4456001A6BA3 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B344AA618EF4456001A6BA3 /* spark.png */; };
+		7B344AAD18EF4473001A6BA3 /* SKBokkeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B344AAC18EF4473001A6BA3 /* SKBokkeScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		7B344A9418EF4433001A6BA3 /* BokehTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BokehTests-Info.plist"; sourceTree = "<group>"; };
 		7B344A9618EF4433001A6BA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B344A9818EF4433001A6BA3 /* BokehTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BokehTests.m; sourceTree = "<group>"; };
+		7B344AA318EF4456001A6BA3 /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		7B344AA418EF4456001A6BA3 /* particleBokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = particleBokeh.sks; sourceTree = "<group>"; };
+		7B344AA518EF4456001A6BA3 /* particleRain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = particleRain.sks; sourceTree = "<group>"; };
+		7B344AA618EF4456001A6BA3 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		7B344AAB18EF4473001A6BA3 /* SKBokkeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBokkeScene.h; sourceTree = "<group>"; };
+		7B344AAC18EF4473001A6BA3 /* SKBokkeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBokkeScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,9 @@
 		7B344A7318EF4433001A6BA3 /* Bokeh */ = {
 			isa = PBXGroup;
 			children = (
+				7B344AAB18EF4473001A6BA3 /* SKBokkeScene.h */,
+				7B344AAC18EF4473001A6BA3 /* SKBokkeScene.m */,
+				7B344AA218EF443E001A6BA3 /* Particles */,
 				7B344A7C18EF4433001A6BA3 /* AppDelegate.h */,
 				7B344A7D18EF4433001A6BA3 /* AppDelegate.m */,
 				7B344A7F18EF4433001A6BA3 /* Main.storyboard */,
@@ -150,6 +164,17 @@
 				7B344A9518EF4433001A6BA3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B344AA218EF443E001A6BA3 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				7B344AA318EF4456001A6BA3 /* bokeh.png */,
+				7B344AA418EF4456001A6BA3 /* particleBokeh.sks */,
+				7B344AA518EF4456001A6BA3 /* particleRain.sks */,
+				7B344AA618EF4456001A6BA3 /* spark.png */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B344A8618EF4433001A6BA3 /* Images.xcassets in Resources */,
+				7B344AA818EF4456001A6BA3 /* particleBokeh.sks in Resources */,
+				7B344AA718EF4456001A6BA3 /* bokeh.png in Resources */,
+				7B344AAA18EF4456001A6BA3 /* spark.png in Resources */,
+				7B344AA918EF4456001A6BA3 /* particleRain.sks in Resources */,
 				7B344A7818EF4433001A6BA3 /* InfoPlist.strings in Resources */,
 				7B344A8118EF4433001A6BA3 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B344A8418EF4433001A6BA3 /* ViewController.m in Sources */,
+				7B344AAD18EF4473001A6BA3 /* SKBokkeScene.m in Sources */,
 				7B344A7E18EF4433001A6BA3 /* AppDelegate.m in Sources */,
 				7B344A7A18EF4433001A6BA3 /* main.m in Sources */,
 			);

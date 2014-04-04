@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SKBokkeScene.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet SKView *skBokkeBackground;
 
 @end
 
@@ -18,6 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    SKBokkeScene * scene = [SKBokkeScene sceneWithSize:_skBokkeBackground.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    [_skBokkeBackground presentScene:scene];
 }
 
 - (void)didReceiveMemoryWarning
